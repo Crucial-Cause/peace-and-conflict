@@ -93,3 +93,28 @@ hr {
     height : 5px;
     width : 80%;
 }
+
+@media only screen and (max-width: 840px) {
+    iframe {
+      width : 500px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    iframe {
+      width : auto;
+      height : auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container img{
+        grid-column: span 1
+    }
+    
+    .grid-container div{
+        grid-column: span 1;
+    }
+}
+
